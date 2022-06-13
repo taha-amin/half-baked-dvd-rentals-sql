@@ -8,7 +8,7 @@ describe('episodes routes', () => {
     return setup(pool);
   });
 
-  it('should return a list of episodes with nested quotes', async () => {
+  it.skip('should return a list of episodes with nested quotes', async () => {
     const res = await request(app).get('/episodes');
     expect(res.body.length).toEqual(6);
     const newCar = res.body.find((char) => char.number === 303);

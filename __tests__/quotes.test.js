@@ -9,7 +9,7 @@ describe('quotes routes', () => {
     return setup(pool);
   });
 
-  it('should add a new quote', async () => {
+  it.skip('should add a new quote', async () => {
     const quote = new Quote({
       episode_id: '6',
       character_id: '6',
